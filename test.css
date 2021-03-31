@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 body {
-    background-color: hsl(125, 6%, 48%);
+    background-color: hsl(120, 10%, 62%);
+    display: flex;
 }
 a {
     text-decoration: none;   
@@ -128,6 +129,6 @@ a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsl(184, 41%, 90%);
+    background-color: hsl(76, 65%, 95%);
     border-radius: 50%;
 }
