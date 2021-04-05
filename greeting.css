@@ -12,11 +12,6 @@ a {
     text-decoration: none;
     color: black;
 }
-#topNav {
-    display: flex;
-    margin-left: 5%;
-    margin-right: 5%;
-}
 .textNav {
     flex: 1;
     text-align: center;
@@ -30,7 +25,7 @@ a {
 }
 #logo {
     width: 70vw;
-    max-width: 700px;
+    max-width: 300px;
 }
 .textCenter {
     font-size: 6vw;
@@ -78,7 +73,9 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 10%;
+    align-items: center;
+    margin: auto;
+    max-width: 1080px;
 }
 .cardPreview {
     height: 33vw;
@@ -107,4 +104,82 @@ a {
     width: 100%;
     height: 5%;
     z-index: 2;
+}
+
+/* MEDIA QUERIES */
+
+/* TABLETS AND UP */
+
+@media (min-width: 600px) {
+
+    /* BOTTOM NAV IS NOW TOP NAV */
+    #bottomNav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        padding-top: 42px;
+        max-width: 100%;
+        z-index: 2;
+    }
+    .fadeOut {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-image: linear-gradient( to bottom, hsl(120, 10%, 62%, 1),hsl(120, 10%, 62%, 1), hsl(120, 10%, 62%, 1), hsl(120, 10%, 62%, 1), hsl(120, 10%, 62%, 0));
+        pointer-events: none;
+        z-index: 1;
+    }
+    .textNav {
+        flex: 1;
+        text-align: center;
+        font-size: 40px;
+        max-width: 230px;
+    }
+    .navLogo {
+        max-width: 150px;
+    }
+    #logoContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 100px 40px 40px 40px;
+    }
+    .textCenter {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 0;
+    }
+    #categoryText {
+        font-size: 45px;
+        text-align: center;
+        margin: auto;
+    }
+    #categoryContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 5%;
+        margin: auto;
+        max-width: 1080px;
+    }
+    .catCell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5%;
+        background-color: hsl(75, 42%, 93%);
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        font-size: 36px;
+    }
+    .cardPreview {
+        max-height: 200px;
+    }
 }
