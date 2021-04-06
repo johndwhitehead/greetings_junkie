@@ -17,6 +17,9 @@ a {
     text-align: center;
     font-size: 6vw;
 }
+.navLinks {
+    color: hsl(75, 42%, 93%);
+}
 #logoContainer {
     display: flex;
     flex-direction: column;
@@ -89,8 +92,8 @@ a {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 15%;
-    background-image: linear-gradient( to top, hsl(120, 10%, 62%, 1),hsl(120, 10%, 62%, 1), hsl(120, 10%, 62%, .8), hsl(120, 10%, 62%, 0), hsl(120, 10%, 62%, 0));
+    height: 8%;
+    background-image: linear-gradient( to top, rgb(0, 0, 0, 1), rgba(35, 14, 53, 1), rgba(27, 11, 42, 0.7), rgb(76, 38, 111, .5),  rgb(76, 38, 111, 0));
     pointer-events: none;
     z-index: 1;
 }
@@ -102,7 +105,7 @@ a {
     margin-bottom: 5%;
     left: 0;
     width: 100%;
-    height: 5%;
+    height: 2%;
     z-index: 2;
 }
 
@@ -119,7 +122,7 @@ a {
         justify-content: center;
         top: 0;
         left: 0;
-        padding-top: 42px;
+        padding-top: 35px;
         max-width: 100%;
         z-index: 2;
     }
@@ -129,19 +132,20 @@ a {
         top: 0;
         left: 0;
         width: 100%;
-        height: 100px;
-        background-image: linear-gradient( to bottom, hsl(120, 10%, 62%, 1),hsl(120, 10%, 62%, 1), hsl(120, 10%, 62%, 1), hsl(120, 10%, 62%, 1), hsl(120, 10%, 62%, 0));
+        height: 60px;
+        background-image: none;
+        background-color:rgb(34, 20, 55);
         pointer-events: none;
         z-index: 1;
     }
     .textNav {
         flex: 1;
         text-align: center;
-        font-size: 40px;
+        font-size: 35px;
         max-width: 230px;
     }
     .navLogo {
-        max-width: 150px;
+        width: 120px;
     }
     #logoContainer {
         display: flex;
@@ -164,7 +168,6 @@ a {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        column-gap: 5%;
         margin: auto;
         max-width: 1080px;
     }
@@ -181,5 +184,8 @@ a {
     }
     .cardPreview {
         max-height: 200px;
+    }
+    .cardCell {
+        margin: 20px;
     }
 }
